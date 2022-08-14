@@ -1,0 +1,165 @@
+/*This is style sheet for the whole webpage*/
+
+
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14pt;
+}
+.header {
+	Padding: 50px;
+	Text-align: center;
+	Background: #272727;
+	Color: white;
+}
+
+p,h1, h2, h3, h4, h5, h6, li, table, a {
+  margin-right: 200px;
+  margin-left: 200px;
+}
+
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.column {
+  float: left;
+}
+
+.ranking-list {
+  margin:auto;
+  padding:15px;
+  float: none;
+}
+
+/* Left column */
+.column.left {
+  width: 70%;
+}
+
+/* Right column */
+.column.right {
+  width: 30%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other 
+instead of next to each other on smaller screens (600px wide or less) */
+
+@media screen and (max-width: 600px) {
+  .column {
+	width: 100%;
+}
+}
+
+.&rdquo;interacting {
+	Padding: 50px;
+	Text-align: left
+	Background: #272727
+	Color: white
+}
+
+
+.button {
+  background-color:#ffbd4a ;
+  border: none;
+  color:  #004aad;
+  padding: 15px 25px;
+  text-align: center;
+  cursor: auto;
+  margin:auto;
+  display: block; 
+}
+
+
+.responsive {
+  width: 100%;
+  height: auto;
+}
+
+
+
+/* Clear floats after the columns */
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.responsive {
+  width: 100%;
+  height: auto;
+}
+
+.&rdquo;interacting {
+	Padding: 50px;
+	Text-align: left
+	Background: #272727
+	Color: white
+}
+
+table {
+  border-collapse: no;
+  border-spacing: 1;
+  max-width: 60%;
+  border: 5px solid #272727;
+  margin-left:auto;
+  margin-right:auto; 
+}
+
+th, td {
+  text-align: center;
+  padding: 8px;
+}
+
+tr:nth-child(even){background-color: #ffbd4a}
+
+
+
+
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #012350;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
+
+li {
+float: left;
+margin-left: 0px;
+margin-right: -100px;
+
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 15px 4px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: gray ;
+}
+
+.active {
+  background-color: #ffbd4a;
+}

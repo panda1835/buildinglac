@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta name="viewport" 
+	content="width=device-width, initial-scale=1">
+ 
+  <link rel = "stylesheet"
+	href= "styles.css" />
+ </head>
+ <body>
+ 
+<!--HEADER-->
+<img src="Header Yellow.png"
+	style="width:100%;height:auto;">
+ 
+  <ul style = " z-index: 100"> 
+   <li><a href="Home.html">Home</a></li>
+   <li><a href="About Us.html">About Us</a></li>
+   <li><a href="Our Paper.html">Our Paper</a></li>
+   <li><a class = "active" href="Our Findings.html">Our Findings</a></li>
+</ul>
+
+<div>
+<h2>RANKING</h2>
+<h4>By Phuong Anh</h4>
+</div>
+<div style="height:20pt; font-size: 15px; margin: 10px 200px">
+  *If the predicted output returns 0, 
+  it means that the model produces a negative number</div>
+     <div class="row">
+ <div class="column left">
+  <!--TEXTBOXES-->
+  <div class="interacting"><form action="/action_page.php">
+  <p><label for="acceptance">Acceptance rate (%)</label>
+  <input id="acceptance" style="width: 100%;height:20pt;" value = "50" name="acceptance" type="number" placeholder="Enter number only" /></p>
+  <p><label for="endowmentpercap">Endowment per capita (US$)</label>
+  <input id="endowmentpercap" style="width: 100%;height:20pt;" value = "1200000" name="endowmentpercap" type="number" placeholder="Enter number only" /></p>
+  <p><label for="sfratio">Student-to-faculty ratio (xx:1)</label> 
+  <input id="sfratio" style="width: 100%;height:20pt;" value = "10" name="sfratio" type="number" placeholder="Enter xx, number only" /></p>
+  <p><label for="socmob">Social mobility ranking</label> 
+  <input id="socmob" style="width: 100%;height:20pt;" value = "20" name="socmob" type="number" placeholder="Enter number only" /></p>
+  <p><label for="fulltimefaculty">Number of of full-time faculty</label> 
+  <input id="fulltimefaculty" style="width: 100%;height:20pt;" value = "250" name="fulltimefaculty" type="number" placeholder="Enter number only" /></p>
+  <p><label for="emfulltimeundergrat">Percentage of employed full-time undergraduate (%)</label> 
+  <input id="emfulltimeundergrat" style="width: 100%;height:20pt;" value = "40" name="emfulltimeundergrat" type="number" placeholder="Enter number only" /></p>
+  <p><label for="peerassess">Peer assessment grade (on scale 5)</label>
+  <input id="peerassess" style="width: 100%;height:20pt;" value = "4.2" name="peerassess" type="number" placeholder="Enter number only" /></p>
+  <p><label for="age">Age of institution (years)</label>
+  <input id="age" style="width: 100%;height:20pt;" value = "50" name="age" type="number" placeholder="Enter number only" /></p>
+  <p><label for="fewerthan20">Percentage of fewer-than-20-students classes (%)</label>
+  <input id="fewerthan20" style="width: 100%;height:20pt;" value = "70" name="fewerthan20" type="number" placeholder="Enter number only" /></p>
+  
+ <!--SUBMIT AND SEE RANKING-->
+ <p>
+  <input style="height:20pt;" type="button" id = "Submit" value="See ranking" /></form></div>
+  </p>
+  </div> 
+  
+ <ul id = "result" style="list-style-type:none; color: white"></ul>   
+
+<div class="column right">
+<!--RANKING LIST-->
+  
+    
+</div>
+    </div>
+     
+<p> </p> 
+<p><b>y = 275.396 + 30.664*Acceptance_rate  + 8.92501E-06*Endowment_per_capita 
++  2.006*Student_faculty_ratio - 0.009*Top_performers_on_social_mobility 
+- 4.11*Employed_Fulltime_Graduate - 62.175*peer_assessment - 0.07*age - 28.232*class_size_<20 + 0.0106*full_time_faculty </b><p>
+<p>There are many commonly held beliefs regarding what a top college is like: it's the ticket to change your social status, the more selective/the older/the more resourceful the college is the higher it ranks. And it must be so good because of its small class size (fewer than 20 people). Hence, the intention we have in mind is to test out these hypotheses and debunk the myth about what is so special and common among the highly ranked universities. However, we want to make it as easy as possible for ourselves to be convinced that those are accurate, so the significance test we choose is at 0.1 level. All in all, through the findings of the multiple regression analysis, <i>it strongly appears that those beliefs are without foundation, and there needs to be thorough research into whether the US News ranking is genuinely reliable</i>.</p>
+<p>I have in total of three hypotheses. To start off, the first belief concerns the ability of a top college to uplift the economic situation of a student, or in other words, there should be a positive relationship between the ranking and the score on "top performers on social mobility". However, it turned out that there does not exist a clear relationship between these two variables since the p-value is 0.392, meaning that the top performer scores on social mobility is not significant even at level 0.1. From this finding, it's safe to deduct that <i>may be entering college is still indeed one way of transforming your social status, yet it may not depend on the ranking of that college but other factors</i>. One can look into this aspect deeper in my colleagues' findings.</p>
+<p>The second commonly held belief led me to come up with the null hypothesis. In essence, there is no relationship between the age of the college, the acceptance rate, and the endowment per capita respectively to the ranking of that college. The findings suggest that there exists a negative correlation between the age of the school and its ranking as well as a positive correlation between the acceptance rate of the college and its ranking. And that's surprising as it indicates that <i>it's not always the case anymore for old colleges to perform better</i>. Additionally, in contrast to our assumption that the more selective the school is the higher rank it must be; the equation is telling us otherwise. The equation suggests that <i>for every 30% higher in the acceptance, the college would improve the rank by one number. Generally, while it's true that a number of years since founded and the acceptance rate have a relationship with the ranking, it's related in opposition to what people believe</i>.</p>
+<p>Last but not least, the third hypothesis is to find whether it's true that a higher percentage of small classes would lead to a higher ranking. <i>The answer is surprisingly no again.</i> In fact, in order for a college to increase its rank by 1 then the college should cut the proportion of classes with fewer than 20 students by 28%. The variable full-time faculty is chosen to check if, in case that there is indeed a positive correlation between the small class size and the ranking, then perhaps the more full-time faculty the school has will also positively relate. Sadly, the p-value of the student-faculty ratio is bigger than 0.1 so it's impossible to reinforce the explanation for the negative correlation between the above variables. </p>
+<p>Besides the commonly held beliefs, we choose independent variables "employed full-time graduates" and "peer assessment score" just out of curiosity as I presume that the higher the rank of a college is the higher the proportion of full-time employees upon graduation will be higher as well. But unfortunately, the p-value for the variable is again too big for the 0.1 significance level so I could not draw any relationship between the two variables. But most surprising of all is the finding of the relationship between the peer assessment score and the ranking of the college. It's ironic as the rank is mostly based on the peer assessment score. Put it another way, it's expected that the score and the ranks positively correlate. <i>Nevertheless, the two are negatively related.</i> This poses a question of how exactly the ranking benefits the users. </p>
+<script src = "../js/Phuong Anh.js"></script> 
+</body>
+</html>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

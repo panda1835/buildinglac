@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta name="viewport" 
+	content="width=device-width, initial-scale=1">
+ 
+  <link rel = "stylesheet"
+	href= "styles.css" />
+ </head>
+ <body>
+ 
+<!--HEADER-->
+<img src="Header Yellow.png"
+	style="width:100%;height:auto;">
+ 
+ <ul> 
+   <li><a href="Home.html">Home</a></li>
+   <li><a href="About Us.html">About Us</a></li>
+   <li><a href="Our Paper.html">Our Paper</a></li>
+   <li><a class = "active" href="Our Findings.html">Our Findings</a></li>
+</ul>
+ 
+<div>
+<h2>SCHOOL VALUE</h2>
+<h4>By Kha</h4>
+</div>
+     
+     <div class="row">
+ <div class="column left">
+  <!--TEXTBOXES-->
+  <div class="interacting"><form action="/action_page.php">
+  <p><label for="sfratio">Student-to-faculty ratio (xx:1)</label> 
+  <input id="sfratio" style="width: 100%;height:20pt;" value = "10" name="sfratio" type="number" placeholder="Enter xx, number only" /></p>
+  <p><label for="fewerthan20">Percentage of fewer-than-20-students classes (%)</label>
+  <input id="fewerthan20" style="width: 100%;height:20pt;" value = "70" name="fewerthan20" type="number" placeholder="Enter number only" /></p>
+  <p><label for="fulltimefaculty">Number of full-time faculty</label> 
+  <input id="fulltimefaculty" style="width: 100%;height:20pt;" value = "250" name="fulltimefaculty" type="number" placeholder="Enter number only" /></p>
+  <p><label for="faculty">Percentage of Faculty with Ph.D or terminal degree (%)</label>
+  <input id="faculty" style="width: 100%;height:20pt;" value = "90" name="faculty" type="number" placeholder="Enter number only" /></p>
+  <p><label for="tuition">Tuition (US$)</label>
+  <input id="tuition" style="width: 100%;height:20pt;" value = "50000" name="tuition" type="number" placeholder="Enter number only" /></p>
+  <p><label for="acceptance">Acceptance rate (%)</label>
+  <input id="acceptance" style="width: 100%;height:20pt;" value = "40" name="acceptance" type="number" placeholder="Enter number only" /></p>
+  <p><label for="needmet">Percentage of students whose need was fully met (%)</label>
+  <input id="needmet" style="width: 100%;height:20pt;" value = "100" name="needmet" type="number" placeholder="Enter number only" /></p>
+  
+ <!--SUBMIT AND SEE RANKING-->
+  <p>
+  <input style="height:20pt;" type="button" id = "Submit" value="See ranking" /></form></div>
+  </p>
+  </div> 
+  
+ <ul id = "result" style="list-style-type:none; color: white"></ul>
+
+<div class="column right">
+<!--RANKING LIST-->    
+</div>
+    </div>
+     
+<p></p>
+<h4>1. Some insights</h4>
+<h5>1.1. Student-faculty ratio</h5> 
+<p>There is not much difference between schools in the top 50 valued schools and the rest; most institutions have a ratio from 8 to 10 faculty per student. Yet, the number is lowest - around 8 in the case of the top 20.</p>
+
+
+<img class = "center" src="Kha1.png" alt=”Kha1”
+	style="max-width:40%;height:auto;text-align:center;">
+
+<h5>1.2. The proportion of small class (class size < 20)</h5>
+<p> Top 10 valued schools rank first with 78% of their classes have small size – below 20 students per class. This number is slightly different from the top 50 with nearly 74%; while the rest have their class size range from 66% to 72%. Overall, there is not a significant difference among the top 10 valued schools and the others.</p>
+
+<img class = "center" src="Kha2.png" alt=”Kha2”
+	style="max-width:40%;height:auto;text-align:center;">
+
+
+<h5>1.3. Full-time faculty</h5>
+<p>Top 20 valued schools have the highest number of full-time faculty - regularly range from 140 - 180. However, the bottom 10 schools surprisingly nearly share the same number with the top 20, distanced by a small gap of 10 faculty.</p>
+<img class = "center" src="Kha3.png" alt=”Kha3”
+	style="max-width:40%;height:auto;text-align:center;">
+<h5>1.4. Faculty with a Ph.D. degree</h5>
+<p>There is not much a difference among schools; since all schools have more than 90% faculty with Ph.D. or terminal degree. Schools ranging from 11 - 20, 20 - 30, and 101 - 110 lead the race with approximately 97%. Irregularly, the top 10 has a slightly low number comparing to them with 94% of faculty.</p>
+<img class = "center" src="Kha4.png" alt=”Kha4”
+	style="max-width:40%;height:auto;text-align:center;">
+<h5>1.5. Acceptance rate</h5>
+<p>The acceptance rate has an increasing trend as the rage gets wider. Top 10 valued schools have the lowest acceptance rate; while the 10 bottom schools have the highest acceptance rate. There is a huge difference between school in the top 50 and the rest, which is nearly 25 - 30%.</p>
+<img class = "center" src="Kha5.png" alt=”Kha5”
+	style="max-width:40%;height:auto;text-align:center;">
+<h5>1.6. Tuition and fee</h5>
+<p>Not much difference between the top 50 ranked schools, all-around $55,000/year. Not much difference with the bottom 50 ranked schools, all-around $48,000/year. In general, there is not a huge difference in tuition across the top 100 schools (Walker, 2020).</p>
+<img class = "center" src="Kha6.png" alt=”Kha6”
+	style="max-width:40%;height:auto;text-align:center;">
+<h5>1.7. The proportion of fully need-met students</h5>
+<p>There is a significant difference between the top 40 and the rest, with the gap is about 30 - 40%. From 90 - 100% of students of the schools in the top 20 have their need fully met; while that of the bottom 20 is ranging from 20 - 40%.</p>
+<img class = "center" src="Kha7.png" alt=”Kha7”
+	style="max-width:40%;height:auto;text-align:center;">
+<h4>2. Regression analysis</h4>
+<h5>2.1. Regression equation of all factors</h5>
+<p><b>School Value = Student-faculty ratio * 1.335822467 + Class sizes <20 * 6.797870907 + Full-time faculty * 0.037626728 - Ph.D or terminal degree * 89.54004469 + Tuition and Fees * 3.21598E-05 - Students whose need was fully met * 9.271302931 + Acceptance rate * 94.39446066 + 73.4034247959271</b></p>
+<p>There are 3 most significant variables: Acceptance Rate, Proportion of fully need-met students, and Proportion of faculty with a Ph.D. or terminal degree; which is based on their absolute value of coefficients. A high R Square and most of the independent variables having positive relationships with the dependent one persuasively prove the accuracy of the hypothesis. Still, it depends on each variable's significance that contributes to the overall coefficiencies of determination, which is not easy to separate for the relatively strong relationship of them.</p>
+<p>Base on the insights and the equation of all factors, I would investigate further the factors that are more likely to impact a school's value, that is (1) Acceptance Rate, (2) Proportion of fully need-met students, (3) Proportion of faculty with Ph.D. or terminal degree, (4)Number of full-time faculty and (5) Proportion of small class.</p>
+<h5>2.2. Regression analysis of significant variables</h5>
+<h5>2.2.1. Small class</h5>
+<p>Equation: y = -68.20555005x + 101.159</p>
+<p>Multiple R 0 < 0.23 < 1 indicates that class size and school value have a positive relationship; yet, this relationship is not strong.</p>
+<h5>2.2.2. Acceptance rate</h5>
+<p>Multiple R 0 < 0.84 < 1 indicates that the acceptance rate and school value have a strong positive relationship.</p>
+<p>Equation: y = 106.3406047x + 3.209372518</p>
+<h5>2.2.3. Full-time faculty</h5>
+<p>Multiple R 0 < 0.04 < 1 indicates that full-time faculty and school value have a positive relationship with low correlation.</p>
+<p>y = -0.015449149x + 54.99289876</p>
+<h5>2.2.4. The proportion of fully need-met students</h5>
+<p>Multiple R 0 < 0.47 < 1 indicates that the proportion of students whose needs are fully met and school values have a relatively strong positive relationship.</p>
+<p>Equation: y = -39.9996x + 76.05506</p> 
+<h5>2.2.5. The proportion of faculty with Ph.D. or terminal degree</h5>
+<p>Multiple R 0 < 0.33 < 1 indicates that the proportion of students whose needs are fully met and school values have a relatively weak positive relationship.</p>
+<p>Equation: y = -221.6216216x + 262.2162162</p>
+<h4>3. Conclusions</h4>
+<p>This equation indicates factors affecting the academic value ranking of a LAC, with a high credibility for its R Square is 71%. There are 3 most significant variables including acceptance rate, proportion of faculty with Ph.D or terminal degrees, and proportion of students whose needs are fully met. The only insignificant variable is tuition and fees. From this equation, it is observed that the increase in  the proportion of students whose needs are fully met and the proportion of faculty with Ph.D or terminal degrees lead to a higher ranking of school value. Also, a low acceptance rate and low faculty-student ratio would enhance the value ranking. This can be explained as good students would likely perform well, thereby naturally adding in the school value. Besides, the more students get their needs fully supported, the more talents the schools would attract. Last but not least, small class size which ensures more chance for students to have effective faculty interaction and faculty who are experts in their fields would lead to a qualified academic program. Hence, in order to ensure academic values, one LAC should take into consideration these factors.</p>
+
+<script src = "../js/Kha.js"></script> 
+</body>
+</html>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta name="viewport" 
+	content="width=device-width, initial-scale=1">
+ 
+  <link rel = "stylesheet"
+	href= "styles.css" />
+ </head>
+ <body>
+ 
+<!--HEADER-->
+<img src="Header Yellow.png"
+	style="width:100%;height:auto;">
+ 
+ <ul> 
+   <li><a href="Home.html">Home</a></li>
+   <li><a href="About Us.html">About Us</a></li>
+   <li><a href="Our Paper.html">Our Paper</a></li>
+   <li><a class = "active" href="Our Findings.html">Our Findings</a></li>
+</ul>
+ 
+<div>
+<h2>RANKING</h2>
+<h4>By Thuc Khang</h4>
+</div>
+     
+     <div class="row">
+ <div class="column left">
+  <!--TEXTBOXES-->
+  <div class="interacting"><form action="/action_page.php">
+  <p><label for="tuition">Tuition (US$)</label>
+  <input id="tuition" style="width: 100%;height:20pt;" value = "50000" name="tuition" type="number" placeholder="Enter number only" /></p>
+  <p><label for="enrollment">Total Enrollment</label>
+  <input id="enrollment" style="width: 100%;height:20pt;" value = "2000" name="enrollment" type="number" placeholder="Enter number only" /></p>
+  <p><label for="salary">Median starting salary of alumni (US$)</label>
+  <input id="salary" style="width: 100%;height:20pt;" value = "50000" name="salary" type="number" placeholder="Enter number only" /></p>
+  <p><label for="acceptance">Acceptance rate (%)</label>
+  <input id="acceptance" style="width: 100%;height:20pt;" value = "50" name="acceptance" type="number" placeholder="Enter number only" /></p>
+  <p><label for="4ygrad">4-year graduation rate (%)</label>
+  <input id="4ygrad" style="width: 100%;height:20pt;" value = "80" name="4ygrad" type="number" placeholder="Enter number only" /></p>
+    
+ <!--SUBMIT AND SEE RANKING-->
+ <p>
+  <input style="height:20pt;" type="button" id = "Submit" value="See ranking" /></form></div>
+  </p>
+  </div> 
+
+ <ul id = "result" style="list-style-type:none; color: white"></ul>
+<div class="column right">
+<!--RANKING LIST-->
+ 
+</div>
+    </div>
+         
+<p> </p> 
+<p><b>Y= Ranking = 208 - 0.001*Tuition and Fees + 0.004*Total Enrollment + 72.53*Acceptance Rate  - 169.43*4-year-graduation - 0.00016*Median starting salary alumni.</b></p>
+<p>Ranking plays an integral part in evaluating one's institution hierarchy as one of the reliable references for parents to send their children with the belief of better training quality or more privilege in the future. As a result, many higher education administrators take advantage of this numerical ordering of the institution, putting the standing of their ranking into their admissions brochures. This also leads to a competitive admission rate. Parents believe that the "good" college depends on the higher the ranking order of the university, the lower the acceptance rate, and the fewer the total enrollment. Once their children can enter those colleges, they can gain the more success the students gain in their career path, and get a better start at their beginnings of the career. As a result, we come up with two hypothesizes to test this social belief.</p>
+<p>My first hypothesis is about the correlation between ranking, including Acceptance rate, Tuition and fee, and the opportunity to get a high salary at the beginning of a career, including the Median starting salary, Four-year-graduation so that we can have our new "predicted ranking". In general, we are going to test the correlation coefficient of 6 variables and suggest a new ranking. R square in my model is 0.816, equal to 81,6%, a very high number. It means that these significant variables can explain 81.6% of the variation in the overall ranking. Hence, it is a good reference and a reliable equation to follow. However, based on my findings, the Median starting salary alumni is NOT statistically significant with the ranking; therefore, there is <i>no relationship between the ranking and median starting salary alumni, which also leads to the false social norms of the ranking university.</i></p>
+<p>Interestingly, I found that there is a considerable difference between the "predicted ranking" and the "actual ranking". This observation enables us to analyze further the correlation between our ranking and the US News' ranking and find an answer for this difference and leads to the second hypothesis. The answer is not surprising at all when there are numerous outliners between two variables. Although there is a positive slope between actual ranking and predicted ranking, the data is varied, and the R square is only 0.18, which describes only 18% variations. The graph indicates that there is <i>no relationship between "actual ranking" and "predicted ranking."</i></p>
+<p>In short, the two tests strengthen my conclusion that there is <i>no relationship between the US News Ranking and the success of the students in their beginnings</i>. This also raises the question of whether higher education institutions only use the numerical orderings as the school branding or as for their higher tuition (because there is a clear relationship between the "Ranking" and the "Tuition and fee"). Or whether it is true that this ordering leads to the smaller "Acceptance Rate" (again, I found there is a positive relationship between "Ranking" and "Acceptance Rate"). </p>
+
+<script src = "../js/Khang.js"></script>
+
+</body>
+</html>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

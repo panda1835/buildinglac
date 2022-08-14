@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta name="viewport" 
+	content="width=device-width, initial-scale=1">
+ 
+  <link rel = "stylesheet"
+	href= "styles.css" />
+ </head>
+ <body>
+ 
+<!--HEADER-->
+<img src="Header Yellow.png"
+	style="width:100%;height:auto;">
+ 
+ <ul> 
+   <li><a href="Home.html">Home</a></li>
+   <li><a href="About Us.html">About Us</a></li>
+   <li><a href="Our Paper.html">Our Paper</a></li>
+   <li><a class = "active" href="Our Findings.html">Our Findings</a></li>
+</ul>
+ 
+<div>
+<h2>OVERALL RANKING</h2>
+<h4>By Quynh</h4>
+</div>
+     
+     <div class="row">
+ <div class="column left">
+  <!--TEXTBOXES-->
+  <div class="interacting"><form action="/action_page.php">
+  <p><label for="acceptance">Acceptance rate (%)</label>
+  <input id="acceptance" style="width: 100%;height:20pt;" name="acceptance" type="number" placeholder="Enter number only" /></p>
+  <p><label for="faculty">Percentage of Faculty with Ph.D or terminal degree (%)</label>
+  <input id="faculty" style="width: 100%;height:20pt;" name="faculty" type="number" placeholder="Enter number only" /></p>
+   
+ <!--SUBMIT AND SEE RANKING-->
+ <p>
+  <input style="height:20pt;" type="button" id = "Submit" value="See ranking" /></form></div>
+  </p>
+  </div> 
+  
+ <ul id = "result" style="list-style-type:none; color: white"></ul>   
+  </div>
+ </div>
+
+<div class="column right">
+<!--RANKING LIST-->
+    
+</div>
+    </div>
+         
+<p> </p> 
+<p><b>y = Overall Ranking = 132.1804327 + 161.1186168 * Acceptance Rate - 149.527712 * Faculty with Ph.D or terminal degree rate</b></p>
+<p>Student's standard and faculty's qualifications are considered as the heart of a university. In other words, these two elements affect the school's overall ranking. We can measure student's standards by the school's acceptance rate, and faculty's qualification by their degree. With that in mind, <b>the first hypothesis</b> would be: "Lower acceptance rate and a higher number of faculty with Ph.D. or terminal degree indicate school's higher ranking." Besides, not only the quality of teacher matters for a university's overall ranking but also the distribution of full-time and part-time faculty. The reason is that this factor directly influences the class's quality. Thus, my assumption for <b>the second hypothesis</b> would be, "Best university tends to recruit part-time faculty and full-time faculty unequally." </p>
+ 
+<p>First, we take the data from the top Liberal Art School sites on US News to analyze. We then take the Overall Ranking figures of schools with Acceptance Rates and the Number of Faculty with a Ph.D. or Terminal Degree for the first hypothesis. Using Regression Analysis, we have the following results: R square equals 65%, which means 65% of the variation in the overall ranking of the school is explained by the independent variables "Acceptance Rate" and "Faculty with Ph.D. or terminal degree rate." With those result, the regression line is formed: </p>
+ 
+<p><b>y = Overall Ranking = 132.1804327 + 161.1186168 * Acceptance Rate - 149.527712 * Faculty with Ph.D or terminal degree rate. </b></p>
+ 
+<p>In other words, for each unit increase in Acceptance Rate, <i>the number of overall ranking increases with 161.1186168 units</i>. We can interpret that the higher the "Acceptance rate", the higher the Overall Ranking. For each unit increase in Faculty with Ph.D. or terminal degree rate, the number of overall ranking decreases with 149.527712  units, which means with the higher "Faculty with Ph.D. or terminal degree rate", the "Overall Ranking" is higher. </p>
+ 
+<p>With the second hypothesis, we use the T-test analysis to deeply understand the two assuming unequal Variances: Part-time faculty and Full-time faculty. As a result, the observed difference between the sample means (149.6 - 54.7) is shown. This means that the Top schools in the US news strategy of recruiting faculty are: The number of full-time faculty is ~ 2,73 times higher than the number of part-time faculty.</p>
+ 
+<p>In conclusion, a lower acceptance rate and a higher number of faculty with a Ph.D. or terminal degree rate indicate 65% of the variation in the overall ranking of the school. Besides, the best strategy for recruiting faculty would be: </p>
+<p>A number of full-time faculty = 2.73 * the number of part-time faculty.</p>
+ 
+<script src = "../js/Quynh.js"></script> 
+ </body>
+</html>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

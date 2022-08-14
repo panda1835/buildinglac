@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta name="viewport" 
+	content="width=device-width, initial-scale=1">
+ 
+  <link rel = "stylesheet"
+	href= "styles.css" />
+ </head>
+ <body>
+ 
+<!--HEADER-->
+<img src="Header Yellow.png"
+	style="width:100%;height:auto;">
+ 
+  <ul style = " z-index: 100"> 
+   <li><a href="Home.html">Home</a></li>
+   <li><a href="About Us.html">About Us</a></li>
+   <li><a href="Our Paper.html">Our Paper</a></li>
+   <li><a class = "active" href="Our Findings.html">Our Findings</a></li>
+</ul>
+ 
+<div>
+<h2>RANKING</h2>
+<h4>By Tuong</h4>
+</div>
+     
+<div style="height:20pt; font-size: 15px; margin: 10px 200px">
+  *If the predicted output returns 0, 
+  it means that the model produces a negative number</div>
+
+<div class="row">
+ <div class="column left">
+  <!--TEXTBOXES-->
+  <div class="interacting"><form action="/action_page.php">
+  <p><label for="tuition">Tuition (US$)</label>
+  <input id="tuition" style="width: 100%;height:20pt;" value = "50000" name="tuition" type="number" placeholder="Enter number only" /></p>
+  <p><label for="endowmentpercap">Endowment per capita (US$)</label>
+  <input id="endowmentpercap" style="width: 100%;height:20pt;" value = "1500000" name="endowmentpercap" type="number" placeholder="Enter number only" /></p>
+  
+ <!--SUBMIT AND SEE RANKING-->
+ <p>
+  <input style="height:20pt;" type="button" id = "Submit" value="See ranking" /></form></div>
+  </p>
+  </div> 
+  
+ <ul id = "result" style="list-style-type:none; color: white"></ul>   
+<div class="column right">
+<!--RANKING LIST-->
+    
+</div>
+    </div>
+    
+<p> </p> 
+<p>School's resources are a fundamental factor to be taken into account when it comes to college rankings. For a liberal arts college to attract a high level of donations, it usually has to possess a good reputation and prestige. Donations received from organizations, corporations, and individuals are then used for scholarships, upgrading facilities, hiring professors. Those are the things that help promote college quality. Class sizes are also a factor to be considered since a proper liberal arts college must maintain their small-sizes classes to improve teaching and learning interaction. Student-centered philosophy would also be easier to be implemented if the number of students is low in each class. However, to function well with small-sized classes, liberal arts colleges must have a secure financial backup. If donations are not enough, increasing tuition and fees is a principal act.</p>
+<p>After running a regression analysis, including those factors, the results were quite satisfactory. With an R-square of 0.72, the model has successfully explained about 72% of the variability of the response data. However, out of the five variables included, only two of them were significant variables: Endowment per capita and Tuition & fees. With their absolute t-stat values all greater than 2 (-6.871 and -14.199 respectively), they stood out from the rest of class-sizes variables whose t-stats were all smaller than 1. Other aspects are p-values and standard errors. While the p-value of the Endowment per capita and Tuition and fee were all less than 0.05 (1.51E-10 and 1E-29 in turn), those of class sizes <20, 20-49, >50 were far over 0.05, even about to reach 1. This indicated that there was a nearly 100% of the null hypothesis - class sizes do not matter when it comes to numerical orders - being true. In addition, standard errors also speak volumes when comparing those of endowment per capita and tuition & fees versus class sizes. With staggeringly high standard error values of over 800, class-sizes variables had many random errors, and thus, the statistics were not accurate.</p>
+<p>Insights gained from conducting regression analysis were both interesting and ambiguous at the same time. Initially, we hypothesized that class sizes mattered since smaller classes needed more rooms, facilities, faculties, and salaries; thus, tuition fees should have inevitably been higher. But after getting considerable numbers from regression, class sizes were no longer considered significant variables. This could be because class sizes should have been combined with other variables besides endowment per capita and tuition fees to figure out the ranking of a liberal arts college. And although class sizes were not considered as important variables, they helped to yield an R-square a bit higher when included (0.713) than when not included (0.683). Nevertheless, this still raised a fundamental question to liberal arts colleges: <i>Should they always keep their small-sized classes to align with student-centered methodology's values?</i></p>
+<p>In conclusion, discrete and smart regression analysis should be taken before we jump to any conclusion about liberal arts colleges' rankings. However, if the numbers turn out to speak against our common intuition, we should take a look back and re-examine whether the variables included are appropriate and complete enough. Therefore, although statistics indeed is a helpful tool to help explain and prove our evaluations and suppositions about the world, we should be hyper careful with it since inadequate data and methods can yield disastrously inaccurate results.</p>
+ 
+<script src = "../js/Tuong.js"></script> 
+
+</body>
+</html>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

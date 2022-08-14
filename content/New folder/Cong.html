@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta name="viewport" 
+	content="width=device-width, initial-scale=1">
+ 
+  <link rel = "stylesheet"
+	href= "styles.css" />
+ </head>
+ <body>
+ 
+<!--HEADER-->
+<img src="Header Yellow.png"
+	style="width:100%;height:auto;">
+ 
+  <ul> 
+   <li><a href="Home.html">Home</a></li>
+   <li><a href="About Us.html">About Us</a></li>
+   <li><a href="Our Paper.html">Our Paper</a></li>
+   <li><a class = "active" href="Our Findings.html">Our Findings</a></li>
+</ul>
+ 
+<div>
+<h2>RANKING</h2>
+<h4>By Tien Cong</h4>
+</div>
+     
+     <div class="row">
+ <div class="column left">
+  <!--TEXTBOXES-->
+  <div class="interacting"><form action="/action_page.php">
+  <p><label for="acceptance">Acceptance rate (%)</label>
+  <input id="acceptance" style="width: 100%;height:20pt;" value = "50" name="acceptance" type="number" placeholder="Enter number only" /></p>
+  <p><label for="enrollment">Total Enrollment</label>
+  <input id="enrollment" style="width: 100%;height:20pt;" value = "2000" name="enrollment" type="number" placeholder="Enter number only" /></p>
+   
+ <!--SUBMIT AND SEE RANKING-->
+ <p>
+  <input style="height:20pt;" type="button" id = "Submit" value="See ranking" /></form></div>
+  </p>
+  </div> 
+  
+ <ul id = "result" style="list-style-type:none; color: white"></ul>
+
+<!--RANKING LIST-->
+</div>
+    </div>
+         
+<p> </p> 
+<p>The original hypothesis comes from the common belief. People often search for the "Acceptance rate" of some favorite schools to know that the lower the rate is, the more famous of the school. Moreover, we would check whether any school having a low acceptance rate has a low number of students as well. Therefore, we would like to develop a ner model to determine the relationship between acceptance and ranking.</p>
+<p>The outcome factor is "Ranking" while the "Acceptance rate" and the "Total Enrollment" are the independent variables.</p>
+<p><b>My equation is: Ranking = 169.0812279 * [Acceptance rate] - 0.003424942 * [Total Enrollment] + 2.553713119. Thus, I run a column of predicted ranking is : = 169.0812279 * [Acceptance rate] - 0.003424942 * [Total Enrollment] + 2.553713119 </b></p>
+<p>After that, we calculate the predicted ranking. From this point, we subtract the predicted ranking from the actual ranking from the US news.</p>
+<p>Looking at R Square, we could see that it's merely 50%. The number said that the correlation between the Ranking and Acceptance rate, Total Enrollment is not completely strong. However, the acceptance rate is statistically significant proving that there is a myth that the higher acceptance rate is, the higher the ranking is as well. Contrastly, our hypothesis is that the low acceptance (from famous school) proves that their high ranking is truly deserved.</p>
+
+<script src = "../js/Cong.js"></script> 
+</body>
+</html>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

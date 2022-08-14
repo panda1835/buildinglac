@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta name="viewport" 
+	content="width=device-width, initial-scale=1">
+ 
+  <link rel = "stylesheet"
+	href= "styles.css" />
+ </head>
+ <body>
+ 
+<!--HEADER-->
+<img src="Header Yellow.png"
+	style="width:100%;height:auto;">
+ 
+  <ul> 
+   <li><a href="Home.html">Home</a></li>
+   <li><a href="About Us.html">About Us</a></li>
+   <li><a href="Our Paper.html">Our Paper</a></li>
+   <li><a class = "active" href="Our Findings.html">Our Findings</a></li>
+</ul>
+ 
+<div>
+<h2>DIVERSITY INDEX</h2>
+<h4>By Phuc</h4>
+</div>
+<p> </p> 
+<p><i>(All of the data is collected from usnews.com exclusively for American Liberal Arts college. The scope of this analysis is within US Liberal Arts colleges, every information beyond this scope is for reference only)</i></p>
+<p><b>Structural diversity, also known as campus diversity, is a term that defines the school/university/college composition in terms of race/ethnicity or gender on campus.</b> Structural diversity is one of the pedagogical elements that some research papers show evidence of its effect on the cognitive development, social awareness, and interpersonal interaction of students. However, I did not take into account the ongoing debate about the importance and necessity of campus diversity in higher education in this analysis. Instead, I focus on aspects of <b>a college that attract and determine a diverse body of students belonging to many races/ethnicity and international students.</b></p>
+<p>Collected from US Liberal Arts colleges, the data demonstrates American racial demographics in the student body, from single-race to multiracial, international, and unknown inclusively. I then apply the generalized variance method to analyze the data. The formula produces the diversity index on the scale of 100, which represents the possibility of two randomly selected students being in different groups. The higher the diversity index, the more diverse is the student body of a college.</p>
+<p>At first, I divided those colleges into two groups of colleges based on their diversity index (20->50 and 50->80) and calculated the average of each variable (explained below) in each group to highlight the difference in descriptive statistics between those groups. Afterward, we did regression to check whether those differences in each variable determine the outcome of interest.</p>
+<p><i>Descriptive statistics table:</i></p>
+<div style="overflow-x:auto;">
+  <table>
+    <tr>
+      <th>Diversity index range</th>
+      <th>Endowment per capita</th>
+	<th>Acceptance rate</th>
+<th>Students who received need-based financial aid</th>
+<th>Tuition and Fees</th>
+<th>Minority and international student organizations</th>
+      <th>Area, Ethnic, Cultural, Gender, and Group Studies</th>
+      <th>Total Enrollment</th>
+	<th>Out-of-state students</th>
+    </tr>
+    <tr>
+      <td>20->50</td>
+	<td>$122,359.80</td>
+	<td>68%</td>
+	<td>75%</td>
+	<td>$43,003.30</td>
+	<td>6.87</td>
+      <td>1.63</td>
+      <td>1,837</td>
+      <td>44%</td>
+    </tr>
+    <tr>
+      <td>50->80</td>
+	<td>$337,316.40</td>
+	<td>48%</td>
+	<td>67%</td>
+	<td>$47,819.58</td>
+	<td>9.07</td>
+      <td>3.8</td>
+      <td>1,604</td>
+      <td>58%</td>
+    </tr>
+ </table>
+</div>
+<p>To have a better understanding of campus diversity, I consider the following category of a college and some variables that I think have the most influence on that category and provide my forecast on how those variables affect our outcome of interest, which is campus diversity.</p>
+<p><b>Affordability</b>: it measures the average cost required to study for a year and how much financial aid the college offers to its students.</p>
+<p>- Tuition and Fees</p>
+<p>- The proportion of students who receive need-based financial aid</p>
+<p>If a college is affordable to a variety of students who come from different backgrounds and demographics, it would have a high chance of attracting a diverse range of students. Thus, I think a college with high tuition and fees would have less campus diversity than a college that has moderate tuition fees, and the opposite effect would be observed for a need-based index.</p>
+<p><b>Accessibility</b>: the measurement of how easy it is to be admitted to the college</p>
+<p>- Acceptance Rate</p>
+<p>- Total Enrollment (overall number of students, including undergraduate and graduate, full-time, part-time and non-degree-seeking students)</p>
+<p>- Proportion of out-of-state students</p>
+<p>This measurement demonstrates the possibility of a student being accepted to a college. If a college is open to many students, i.e., not very selective, there would be more students coming and studying on campus. It shares the same effect as Affordability, which means that if any of those three factors are high, the college is open for many students, and thus its diversity index is probably high as well.</p>
+<p><b>Academic Support</b>: support the students on helping them to discover and understand their racial/ethnic identity</p>
+<p>- Number of Minority and international student organizations</p>
+<p>- Number of major on Area, Ethnic, Cultural, Gender, and Group Studies</p>
+<p>One reason for a student to choose a college of high racial/ethnic diversity is its support offered to help students in terms of racial/ethnic identity. The more services are available in those fields, the more support students would receive from the college. It shows that the college is firm in striving to achieve structural diversity; thus, its credibility would be higher and attract more students.</p>
+<p><b>College Success</b>: indicates how reputable the college is, measured by money received from social donation.</p>
+<p>- Endowment per capita (the amount of endowment per current total enrollment)</p>
+<p>This measurement is an objective indicator showing success of a college in terms of its students' academic achievement and career success. I think there is a link between the quality of a college and its campus diversity.</p>
+<p>We ran the regression three times in total, the final R squared is quite low, 0.375, however, there are some interesting insights:</p>
+<p><b>The equation: diversity index = -0.208*[Acceptance rate] + 0.011*[Area, Ethnic, Cultural, Gender, and Group Studies] - 5.64E-05*[Total Enrollment] + 0.491</b></p>
+<p>The R squared drop from 0.43 in the first regression down to 0.37, implying that the eradicated variables can explain only 6% of the result, which is insignificant. There are two observations regarding how those insignificant variables perform in the descriptive statistics table. The first one consists of the variables whose difference between the two groups is considerable, which are endowment per capita and out-of-state student ratio. The second contains the rest, which shows the insignificant difference between the two groups. They are the number of minority and international student organizations and the proportion of students who received need-based financial aid.</p>
+<p>The first observation contains more meaningful information in terms of statistics. Considering the first group of variables where there is a considerable gap considering the average endowment per capita between the upper half and the lower half in terms of diversity level ($122,359 compares to $337,316). However, this variable does not contribute to explaining the diversity index despites their apparent correlation; <b>its p-value is only 0.72 and is lower than the 0.95 level. Hence, I conclude that the variable endowment per capita merely has a correlational association rather than a causational association with structural diversity</b>. A potential explanation of why it is a correlational association is that there might exist a common underlying quality shared by both colleges, which are high in diversity index and those with high endowment per capita. There is a chance that underlying commonality is the academic quality of a college. <b>This is because colleges have a high diversity index that can provide students with a multiracial environment, which is supported by a variety of literature to be beneficial for students' academic advancement and social awareness</b>. And those students are more likely to achieve success in their careers, and they are also more likely to come back and contribute to their colleges under the form of financial support. A similar rationale is applied in the case of out-of-state students; <b>colleges that are more ethnically and racially diverse also have a higher level off the diversity of students in terms of geography on their campus</b>.</p>
+<p>After the first regression, <b>the statistically significant variables are Acceptance rate, Tuition and Fees, a number of majors relating to Area, Ethnic, Cultural, Gender, and Group Studies and Total Enrollment</b>. In case of Tuition and Fees, I found an exciting finding that after eliminating the insignificant variables - as a result of the first regression - and rerun the regression, it is no longer statistically significant. Also, there is a change in its coefficient, about twice as much in the second regression as compared to in the first one. Furthermore, when I removed and reran the regression, the R squared decreased only by 0.016. It means that if this explanatory variable is a predictor of the outcome, it is responsible for roughly 1.6% of the data. I decide to eliminate this variable from the equation because of its inconsistency between regressions and small overall effect. The third regression shows all significant variables, which are <b>Acceptance rate, Total Enrollment and number of majors relate to Area, Ethnic, Cultural, Gender, and Group Studies</b>. Their coefficient does not vary so much from the first regression.</p>
+<p>The coefficient of each variable gives us insights into the extent of its role in determining the outcome. The coefficient of a number of majors is 0.013, which is very small if taking into account the fact that the data range is from 0 to 15 majors. In layman's terms, it implies that an increase in 10 majors is followed by an increase in just 1% in the diversity index. This is not very practically significant despite its statistical significance. Despite the small influence, this variable still needs to be studied because of the supporting p-value from the regression. One possible interpretation of this factor is that the college must offer a variety of majors in this field to attract students from many demographics. The number of majors does not stand alone in this picture; however, the quantity of courses under those majors is important as well (unfortunately, I could not collect this kind of data). Exclusively, in the Liberal Arts education environment where students are encouraged to take various courses spreading out many disciplines, those courses help raise awareness of students about social issues, promote students to discover, and determine their racial and ethnic identity. This is one of the criteria that one should consider if they want to choose a college with good diversity.</p>
+<p>The other two variables, which are Acceptance rate and Total enrollment, have an opposite effect to what I predicted earlier. Both of them have negative coefficients, which implies a reversed association between the variable itself and the outcome. This sort of observation also appears in the descriptive statistics table. <b>In case of Acceptance rate, its coefficient is -0.258, which suggests that if a college lowers its acceptance rate by 10% (i.e., 10% less of total applicants are admitted), the following diversity index will increase by 25%.</b> This is counter-intuitive since it is harder for a student to get selected into a college with highly selective admission. Therefore, it is likely that fewer students from different backgrounds and demographics have a chance to study in a selective college. However, there is still a plausible understanding of this observation if we look at it from the other side. For a college with highly selective admission, they consider their applicants carefully to choose the most suitable students. Hence, they have more autonomy in balancing among many pedagogical factors, from student quality to administration, to achieve the highest academic achievement and reputation. It is clear that prestigious colleges receive attention from potential students from different backgrounds, geographic regions, ages, gender, races and ethnicities. For that reason, coupled with the fact that one of the ongoing changes in the educational system that many US colleges are pursuing is campus diversity, those colleges are able to make their campus as diverse as they can.</p>
+<p>Total enrollment performs a similar role in the picture. It has an adverse effect like acceptance rate and small practical significance as a number of majors on area, ethnics, culture and gender. The model suggests that when the total enrollment increases by 1000 students, the diversity index decreases only by 0.06% (one piece of information should be noticed is that the data range of total enrollment is 212-4,512). Again, although this variable is only theoretically significant, we should not ignore its emphasis on the size of the student body. A community of a small number of students is more connected in terms of personal bonding and social interaction than one with a large number of students. This connectivity in a diverse community is important. I believe the difference in races and ethnicities is accepted and welcome as people have a chance to get to know more about each other and learn from each other.</p>
+<p>As a last note, despite the low ultimate R squared, which is an important signal of how good the model is at predicting the diversity index, the regression result provides us with meaningful insights. Parallel to having a diverse learning community, the college should also strive for excellence in academic quality and remain a small campus size with carefully selected students to maintain a wide range of connected students. Moreover, providing various helps considering racial/ethnic identity under the form of services or academic courses and counseling also plays an important role in maintaining a healthy, balanced and diverse campus. This model can be improved by adding some more explanatory variables such as the diversity index of each college over the years to see how it changes, the composition of diversity index of freshmen and other students (sophomores, seniors and graduates) to see how the diversity index of a college affect the decision of newcomers, the number of courses in Area, Ethnic, Cultural, Gender, and Group Studies as evidence for the number of major variables in our model.</p>
+<p></p>
+<h4>Bibliography</h4>
+<p>Adwere-Boamah, Joseph. n.d. "Measuring diversity of university enrollments: The generalized."</p>
+<p>Janelle S. Peifer, Karen L. Chambers, Elaine Meyer Lee. Fall 2017. "Examining the Role of Structural Diversity." Journal of Phi Beta Volume 7, Number 1.</p>
+<p>Patrick T. Terenzini, Alberto F Cabrera, Carol Colbeck, Stefani A. Bjorklund, John M. Parente. 2001. "Racial and Ethnic Diversity in the Classroom. Does it promote student learning." The Journal of Higher Education 509-531.</p>
+ </body>
+</html>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
